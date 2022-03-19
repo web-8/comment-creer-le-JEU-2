@@ -1,0 +1,138 @@
+body{
+    background-image: url(./background.png);
+}
+.contenair{
+    margin-top: 558px;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    color: rgb(5, 5, 63);
+    font-size: 180%;
+}
+li{
+    color: blue;
+    font-size: 150%;
+    font-weight: bold;
+}
+p{
+    font-size: 150%;
+    color: rgb(7, 7, 7);
+    font-weight: bold;
+}
+span{
+    color: rgb(12, 12, 75);
+    font-weight: bold;
+}
+.imgun>img{
+    width: 50%;
+}
+.imgdeux>img{
+    width: 30%;
+}
+.imgtrois>img{
+    width: 60%;
+}
+.imgquatre>img{
+    width: 50%;
+}
+.imgcinq>img{
+    width: 50%;
+}
+.imgsix>img{
+    width: 50%;
+}
+.imgsept>img{
+    width: 65%;
+}
+.imghuit>img{
+    width: 65%;
+}
+.imgneuf>img{
+    width: 20%;
+}
+.imgdix>img{
+    width: 20%;
+}
+.imgonze>img{
+    width: 30%;
+}
+.imgdouze>img{
+    width: 50%;
+}
+.imgtreize>img{
+    width: 50%;
+}
+.imga>img{
+    width: 40%;
+}
+.imgb>img{
+    width: 60%;
+}
+.imgc>img{
+    width: 60%;
+}
+.imgd>img{
+    width: 40%;
+}
+.imge>img{
+    width: 50%;
+}
+.imgf>img{
+    width: 25%;
+}
+.imgg>img{
+    width: 50%;
+}
+h1{
+    text-align: center;
+    font-size: 300%;
+}
+footer{
+    margin-top: 250px;
+}
+footer>p{
+    text-align: center;
+    font-size: 250%;
+}
+
+/*je passe au jeu*/
+#btn-red{
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    animation-name: rouge;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+#btn-blue{
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    animation-name: bleu;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rouge{ /*il tourne dans le sens des aiguilles d'une montre*/
+    0% {left: 0px; top: 0px;}
+    25% {left: 1000px; top: 0px;} 
+    50% {left: 1000px; top: 200px;}
+    75% {left: 0px; top: 200px;}
+    100% {left: 0px; top: 0px;}
+}
+@keyframes bleu{ /*il tourne dans le sens INVERSE des aiguilles d'une montre*/
+    0% {left: 0px; top: 0px;}
+    25% {left: 0px; top: 200px;} 
+    50% {left: 1000px; top: 200px;}
+    75% {left: 1000px; top: 0px;}
+    100% {left: 0px; top: 0px;}
+}
+
+
+

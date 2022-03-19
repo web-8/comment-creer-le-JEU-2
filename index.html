@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Comment creer le JEU 2</title>
+</head>
+
+<body>
+    <section class="contenair">
+        <h2>CREER LE JEU 2</h2>
+
+        <ul><h2>ETAPE 1</h2>
+            <li>Ecrire le pseudo-code pour connaitre l'évènement, les éléments et les actions, voir l'exemple :</li>
+            <p><span>"Au clic sur le cercle, le compteur augmente de 1."</span></p>
+            <p><span>"au clic"</span> c'est l'évènement.</p>
+            <p><span>"le cercle"</span> et <span>"le compteur"</span> c'est les éléments.</p>
+            <p><span>"augmente de 1"</span> c'est l'action.</p>
+            <li>J'écris les étapes à accomplir grâce au pseudo-code :</li>
+            <p>&emsp;Je sélectionne et je stocke le cercle.</p>
+            <p>&emsp;Je crée une cariable compteur initialisée à 0.</p>
+            <p>&emsp;J'ajoute un évènement au cercle.</p>
+            <p>&emsp;J'ajoute une action à "compteur".</p>
+            <p><span>CECI EST LA METHODE DES 3S :</span> Selectionner + Stocker + Soummettre à une action</p>
+            <li>Je crée mon cercle:</li>
+            <p>&emsp;Dans mon html, je crée un DIV qui contient un ID.</p>
+            <div class="imgun">
+                <img src="./1.png">
+            </div>
+            <br>
+            <p>&emsp;Je lui donne son style dans le css.</p>
+            <div class="imgdeux">
+                <img src="./2.png">
+            </div>
+            <br>
+            <li>Je sélectionne et je stocke dans mon JS.</li><br>
+            <div class="imgtrois">
+                <img src="./3.png">
+            </div>
+            <br>
+            <li>Je soumets l'élément à une action.</li>
+            <p>&emsp;JS a besoin de savoir "que QUAND a lieu le clic pour faire l'action", pour cela nous utilisons "addEventListener".</p>
+            <p>&emsp;JS a besoin de savoir QUEL évènement à gérer, ici il s'agit du clic donc on notera 'click'.</p>
+            <p>&emsp;JS doit enfin se mettre en ACTION, pour cela on utilise FUNCTION.</p>
+            <div class="imgquatre">
+                <img src="./4.png">
+            </div><br>
+            <p>&emsp;Je vérifie dans ma console, si lorsque je clic sur le bouton rouge cela est compté. Je peux mettre une phare dans ma console en expliquant ce que je souhaite vérifier</p>
+            <div class="imgcinq">
+                <img src="./5.png">
+            </div>
+            <br>
+            <li>Incrémenter le compteur :</li>
+            <p>&emsp;JS doit comprendre qu'au démarrage, le compteur est à 0 et qu'à chaque clic il doit s'agrémenter de 1.</p>
+            <p>&emsp;Pour cela j'initialise une variable ayant une valeur de 0. 
+                Je vais utiliser la variable LET car elle va bouger, elle va se modifier.</p>
+            <div class="imgsix">
+                <img src="./6.png">
+            </div><br>
+            <p>&emsp;Je place ma demande d'incrémentation à l'intérieur de l'évènement addEventListener.</p>
+            <div class="imgsept">
+                <img src="./7.png">
+            </div><br>
+            <p>&emsp;Je vérifie dans ma console.</p>
+            <div class="imghuit">
+                <img src="./8.png">
+            </div><br>
+        </ul>
+        
+        <ul><h2>ETAPE 2</h2>
+            <li>J'ajoute un 2ème cercle, pour cela je fais comme tout à l'heure, je crée un div qui contient un id dans mon html.</li><br>
+            <div class="imgneuf">
+                <img src="./9.png">
+            </div><br>
+            <li>Je lui donne un style dans mon css, ici le même que le bouton rouge mais en bleu.</li><br>
+            <div class="imgdix">
+                <img src="./10.png">
+            </div><br>
+            <li>Nos cercles sont actuellement statiques. Je vais leur donner le pouvoir de bouger.</li>
+            <p>&emsp;Je leur mets une position relative.</p>
+            <p>&emsp; Puis je nomme l'animation.</p>
+            <p>&emsp; Ensuite je leur donne une durée et leur autorise de faire un itinéraire.</p><br>
+            <div class="imgonze">
+                <img src="./11.png">
+            </div><br>
+            <p>&emsp;J'utilise @keyframes :</p><br>
+            <div class="imgdouze">
+                <img src="./12.png">
+            </div><br>
+            <li>Je sélectionne et je stocke le cercle bleu (comme on a fait pour le cercle rouge) .</li><br>
+            <div class="imgtreize">
+                <img src="./13.png">
+            </div><br>
+            <li>Je soumets le cercle bleu à une action.</li><br>
+            <div class="imga">
+                <img src="./A.png">
+            </div><br>
+            <li>Je fais l'incrémendation du compteur.</li>
+            <p>&emsp;Je pourrais l'écrire comme ci-dessous, sauf que cela serait une répétition et JS n'en veut pas.</p><br>
+            <div class="imgb">
+                <img src="./b .png">
+            </div><br>
+            <p>&emsp;Donc à la place je vais faire ceci :</p><br>
+            <div class="imgc">
+                <img src="./c.png">
+            </div><br>
+        </ul>
+
+        <ul><h2>ETAPE 3</h2>
+            <li>Afficher le nombre de clic, soit le nombre de point sur la page. Actuellement les clic s'affichent dans inspecter mais pas devant l'utilisateur.</li>
+            <p>&emsp;Je crée un titre dans mon html, c'est là que le nombre de points s'affichera.</p>
+            <br>
+            <div class="imgf">
+                <img src="./f.png">
+            </div><br>
+            <p>&emsp;Je crée ma variable du titre.</p><br>
+            <div class="imgd">
+                <img src="./d.png">
+            </div><br>
+            <p>&emsp;Je rajoute le inner.Text dans ma fonction.</p><br>
+            <div class="imge">
+                <img src="./e.png">
+            </div><br>
+            <h2>ET SI ON AJOUTAIT UN CHRONOMETRE ?</h2>
+        </ul>
+
+        <ul><h2>ETAPE 4 - LE CHRONOMETRE</h2>
+            <li>Nous allons demander à JS deux actions : retirer les cercles et le faire au bout d'un temps précis.</li>
+            <p>&emsp;Pour cela nous allons utiliser setTimeout.</p><br>
+            <div class="imgg">
+                <img src="./g.png">
+            </div><br>
+        </ul>
+
+        <h1 id="titre">Clic sur les cercles</h1>
+        <div id="btn-red"></div>
+        <div id="btn-blue"></div>
+    </section>
+
+    <footer><p>FIN</p></footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
+
+
+
